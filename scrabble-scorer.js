@@ -25,7 +25,6 @@ function simpleScorer(word) {
 
 simpleScorer(yourWord);
 
-
 function vowelBonusScorer(word) {
   let total = 0;
   const vowel = ['a','e','i','o','u'];
@@ -43,7 +42,6 @@ function vowelBonusScorer(word) {
   /*console.log(`${yourWord} is worth ${result} points.`);*/
   vowelBonusScorer(yourWord);
 
-
 function oldScrabbleScorer(word) {
 	word = word.toLowerCase();
 	let letterPoints = "";
@@ -59,7 +57,6 @@ function oldScrabbleScorer(word) {
  }
 
 oldScrabbleScorer(yourWord);
-
 
 let simpleScore = {
   name: "Simple Score",
@@ -90,7 +87,6 @@ function scorerPrompt() {
   }
     console.log(`Score for '${yourWord}': ${scoringAlgorithms[num].scoreFunction(yourWord,newPointStructure)}`);
 }
-
 
 function transform(object) {
   let newObject = {};
