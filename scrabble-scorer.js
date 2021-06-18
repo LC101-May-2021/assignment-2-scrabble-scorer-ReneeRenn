@@ -22,7 +22,6 @@ function simpleScorer(word) {
   /*console.log(`${yourWord} is worth ${word.length} points.`);*/
   return word.length
 }
-
 simpleScorer(yourWord);
 
 function vowelBonusScorer(word) {
@@ -39,14 +38,13 @@ function vowelBonusScorer(word) {
   return total;
 }   
   const result = vowelBonusScorer(yourWord);
-  /*console.log(`${yourWord} is worth ${result} points.`);*/
   vowelBonusScorer(yourWord);
+  /*console.log(`${yourWord} is worth ${result} points.`);*/
 
 function oldScrabbleScorer(word) {
 	word = word.toLowerCase();
 	let letterPoints = "";
- 
-	for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length; i++) {
     for (const pointValue in oldPointStructure) {
       /*if (oldPointStructure[pointValue].includes(word[i])) {
 			letterPoints += `Points for '${word[i]}': ${pointValue}\n`
@@ -55,7 +53,6 @@ function oldScrabbleScorer(word) {
 	 }
 	return letterPoints;
  }
-
 oldScrabbleScorer(yourWord);
 
 let simpleScore = {
@@ -108,7 +105,6 @@ function scrabbleScore(word, pointStructure) {
     total += pointStructure[word[i]];
   }
 return total;
-
 }
 
 function runProgram() {
